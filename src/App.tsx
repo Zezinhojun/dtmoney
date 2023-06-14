@@ -1,3 +1,4 @@
+import { TransactionProvider } from "./TransactionsContext";
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 import NewTransactionModal from "./components/NewTransactionModal";
@@ -17,14 +18,15 @@ function App() {
   }
 
   return (
-    <>
+    <TransactionProvider>
       <Header onOpenNemTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
-      <NewTransactionModal isOpen={isNewModalTransactionOpen}
+      <NewTransactionModal
+        isOpen={isNewModalTransactionOpen}
         onRequestClose={handleCloseNewTransactionModal}
       />
       <GlobalStyle />
-    </>
+    </TransactionProvider>
   );
 }
 
