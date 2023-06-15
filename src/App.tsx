@@ -1,4 +1,4 @@
-import { TransactionProvider } from "./TransactionsContext";
+import { TransactionProvider } from "./hooks/useTransactions";
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 import NewTransactionModal from "./components/NewTransactionModal";
