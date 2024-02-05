@@ -60,7 +60,7 @@ export const Summary = () => {
       <div>
         <header>
           <p>Saídas</p>
-          <img src={outcomeImg} alt="Entradas" />
+          <img src={outcomeImg} alt="Saídas" />
         </header>
         <strong>
           -
@@ -72,8 +72,8 @@ export const Summary = () => {
       </div>
       <div className="highlight-background">
         <header>
-          <p>Entradas</p>
-          <img src={totalImg} alt="Entradas" />
+          <p>Total</p>
+          <img src={totalImg} alt="Total" />
         </header>
         <strong>
           {new Intl.NumberFormat("pt-BR", {

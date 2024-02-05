@@ -35,7 +35,7 @@ const NewTransactionModal = ({
 
     setTitle("");
     setAmout(0);
-    setCategory("deposity");
+    setCategory("");
     setType("");
 
     onRequestClose();
